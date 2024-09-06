@@ -7,7 +7,7 @@ export function RestoreProduct() {
 
     const user = JSON.parse(localStorage.getItem('userData'));
     const token = user?.token
-    const userData = useFetch('http://localhost:3100/admin//product-trash');
+    const userData = useFetch('https://fullstackshop-twinst.onrender.com/admin//product-trash');
     console.log(userData);
     const [state,setState] = useState("");
     let isState;
@@ -48,7 +48,7 @@ export function RestoreProduct() {
                     <td>
                         <button onClick={() =>  {
 
-                                            fetch('http://localhost:3100/admin/product-restore', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/product-restore', {
                                             method: "PATCH",
                                             headers: {
                                                 "Content-Type" : "application/json",
@@ -62,7 +62,7 @@ export function RestoreProduct() {
                         <button onClick={() =>  {
                                             if(confirm("are you suer?")){
 
-                                            fetch('http://localhost:3100/admin/delete-product-force', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/delete-product-force', {
                                             method: "DELETE",
                                             headers: {
                                                 "Content-Type" : "application/json",
@@ -88,7 +88,7 @@ export function RestoreProduct() {
                     <td>
                         <button onClick={() =>  {
 
-                                            fetch('http://localhost:3100/admin/product-restore', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/product-restore', {
                                             method: "PATCH",
                                             headers: {
                                                 "Content-Type" : "application/json",
@@ -102,7 +102,7 @@ export function RestoreProduct() {
                         <button onClick={() =>  {
                                             if(confirm("are you suer?")){
 
-                                            fetch('http://localhost:3100/admin/delete-product-force', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/delete-product-force', {
                                             method: "DELETE",
                                             headers: {
                                                 "Content-Type" : "application/json",
