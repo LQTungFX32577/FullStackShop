@@ -8,7 +8,7 @@ const navigate = useNavigate();
     e.preventDefault();
     const formData = new FormData(e.target);
     const userData = Object.fromEntries(formData.entries());
-    fetch('http://localhost:3100/user/login', {
+    fetch('https://fullstackshop-twinst.onrender.com/user/login', {
         method:"POST",
         headers:{
             "Content-Type" : "application/json",
