@@ -8,7 +8,7 @@ export function ViewOrder() {
     const { orderId } = useParams();
     const userData = JSON.parse(localStorage.getItem('userData'));
     const token = userData?.token  
-    const Detail = useFetch('http://localhost:3100/user/history/'+ orderId)
+    const Detail = useFetch('https://fullstackshop-twinst.onrender.com/user/history/'+ orderId)
     const user = Detail?.user;
     const item = Detail?.orders;
     return (
@@ -40,7 +40,7 @@ export function ViewOrder() {
                             <td>{data.quantity}</td>
                             <td>
                                 <button onClick={() => {
-                                                    fetch('http://localhost:3100/admin/count',{
+                                                    fetch('https://fullstackshop-twinst.onrender.com/admin/count',{
                                                         method: "POST",
                                                         headers: {
                                                             "Content-Type":"application/json",
@@ -62,7 +62,7 @@ export function ViewOrder() {
             </table>
             <div style={{display:"flex", justifyContent:"space-evenly"}}>
                 <button onClick={() => {
-                        fetch('http://localhost:3100/admin/status/'+ orderId ,{
+                        fetch('https://fullstackshop-twinst.onrender.com/admin/status/'+ orderId ,{
                             method: "POST",
                             headers: {
                                 "Content-Type":"application/json",
@@ -79,7 +79,7 @@ export function ViewOrder() {
                 }} 
                 style={{color:"orange"}}>Shipping</button>
                 <button  onClick={() => {
-                        fetch('http://localhost:3100/admin/status/'+ orderId ,{
+                        fetch('https://fullstackshop-twinst.onrender.com/admin/status/'+ orderId ,{
                             method: "POST",
                             headers: {
                                 "Content-Type":"application/json",
@@ -96,7 +96,7 @@ export function ViewOrder() {
                 }} 
                 style={{color:"green"}}>Completed</button>
                 <button  onClick={() => {
-                        fetch('http://localhost:3100/admin/status/'+ orderId ,{
+                        fetch('https://fullstackshop-twinst.onrender.com/admin/status/'+ orderId ,{
                             method: "POST",
                             headers: {
                                 "Content-Type":"application/json",
