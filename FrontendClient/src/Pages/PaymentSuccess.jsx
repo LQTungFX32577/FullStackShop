@@ -3,7 +3,7 @@ import { useFetch } from "../Hook/Fetch"
 
 export function PaymentSuccess() {
     const { userId } = useParams();
-    const Data = useFetch('http://localhost:3100/user/bill/'+ userId)
+    const Data = useFetch('https://fullstackshop-twinst.onrender.com/user/bill/'+ userId)
     return (
         <>
             <div>
@@ -23,7 +23,7 @@ export function PaymentSuccess() {
                         }}>Download your Bill</button>
                     </>
                 ))}
-                        <button onClick={() => window.location.href=`http://localhost:3100/user/invoice/${userId}`} >bill</button>
+                        <button onClick={() => window.location.href=`https://fullstackshop-twinst.onrender.com/user/invoice/${userId}`} >bill</button>
             </div>
         </>
     )
