@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.container form {
+ display: flex;
+ flex-direction: column;
+}
+.container form {
+    width: 300px;
+    text-align: center;
+    gap: 20px;
+}
+.container form input {
+    height: 30px;
+}
+.buttonF {
+    width: 150px;
+    height: 40px;
+    color: black;
+    font-weight: 500;
+    border: solid 1px white;
+    border-radius: 8px;
+    margin-left: 80px;
+    
+}
+.buttonF:hover {
+    color: white;
+    background-color:  orange;
+    cursor: pointer;
+}

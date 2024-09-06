@@ -1,0 +1,52 @@
+.container {
+    background-image: url("../../public/banner1.jpg");
+    height: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    border-color: white;
+    background-color: rgba(250, 248, 248, 0.917);
+    margin-left: 700px;
+    box-shadow: 1px 3px 3px 3px  rgb(215, 214, 214);
+}
+.content p{
+    font-size: 35px;
+    color: gray;
+}
+.content a:hover{
+  color: red;
+}
+.content a{
+    width: 150px;
+    align-self: center;
+    
+}
+.content input{
+    width: 300px;
+    height: 40px;
+    align-self: center;
+    text-align: left;
+    border: 0.1px solid gray;
+    outline: none;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-indent: 20px;
+}
+.content button{
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.385);
+    color: white;
+}
+.content button:hover {
+    background-color: rgba(0, 0, 0, 0.524);
+}

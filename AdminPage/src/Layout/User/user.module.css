@@ -1,0 +1,14 @@
+.table{
+    margin-right: 40px;
+    background-color:  rgb(247, 247, 247);
+    width: 1220px;
+    opacity: 0.8;
+}
+.h1{
+    color: gray;
+    text-align: left;
+}
+.table td{
+    background-color: white;
+    padding: 5px;
+}

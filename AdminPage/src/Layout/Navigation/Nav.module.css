@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 50px;
+    width: 250px;
+    background-color: #f4f5f9;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 12px;
+    
+}
+.content h2{
+  border-bottom:  3px solid black;
+}
+.content a{
+    width: 50%;
+    padding: 10px;
+    font-style: italic;
+}
+.content a:hover{
+  scale: 1.2;
+  background-color: #eae7e7;
+}
+.active{
+  scale: 1.2;
+  background-color: #eae7e7;
+}

@@ -1,0 +1,8 @@
+{
+    "env": {
+         "JWT_Secret": "twinsttokensecret",
+         "Mongo_DB":"tungle",
+         "Mongo_Pass":"130399",
+         "Stripe_Key":"sk_test_51PuQOaI3ndHDgrukVSS8fajg0h89UlQe4X9ul3GacAMgNeZW9vXpKRBtp8MsFhi175XUhXrvuveeURlwpGQFNVpl00xJZNzuOv"
+    }
+}
