@@ -7,7 +7,7 @@ export function EditProduct() {
     const { editId } = useParams();
     const userData = JSON.parse(localStorage.getItem('userData'));
     const token = userData?.token
-    const Data = useFetch('http://localhost:3100/admin/edit-product/' + editId);
+    const Data = useFetch('https://fullstackshop-twinst.onrender.com/admin/edit-product/' + editId);
     const [state, setState] = useState();
     const [status,setStatus] = useState('');
     const [files, setFiles] = useState(null);
@@ -45,7 +45,7 @@ export function EditProduct() {
           photos: fileArr
         }
         console.log(data);
-        fetch('http://localhost:3100/admin/product-edit/'+ editId, {
+        fetch('https://fullstackshop-twinst.onrender.com/admin/product-edit/'+ editId, {
           method: "PATCH",
           headers: {
               "Content-Type" : "application/json",
