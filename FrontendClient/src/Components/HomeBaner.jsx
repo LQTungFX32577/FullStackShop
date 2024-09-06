@@ -19,7 +19,7 @@ function HomeBanner({ products }) {
         e.preventDefault();
         
         toast.info('Thank you for subscribed')
-        fetch('http://localhost:3100/user/mail', {
+        fetch('https://fullstackshop-twinst.onrender.com/user/mail', {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"
