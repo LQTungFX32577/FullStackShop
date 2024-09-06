@@ -39,7 +39,7 @@ export function AddProduct() {
             count: FromData.get('count'),
             photos: fileArr,
           }
-          fetch('http://localhost:3100/admin/addProduct', {
+          fetch('https://fullstackshop-twinst.onrender.com/admin/addProduct', {
             method: "POST",
             headers: {
                 "Content-Type" : "application/json",
