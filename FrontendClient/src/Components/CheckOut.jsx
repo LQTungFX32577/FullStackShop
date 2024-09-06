@@ -16,7 +16,7 @@ function Checkout() {
      useEffect(() => {
          const api = async() => {
 
-              const response = await fetch('http://localhost:3100/shop/getCart', {
+              const response = await fetch('https://fullstackshop-twinst.onrender.com/shop/getCart', {
                            headers: {
                                         'Content-Type': 'application/json',
                                         'Authorization': 'Bearer ' + token
@@ -71,7 +71,7 @@ function Checkout() {
         toast.warning('you must sign info first!')
        } 
        else{
-           fetch('http://localhost:3100/shop/credit', {
+           fetch('https://fullstackshop-twinst.onrender.com/shop/credit', {
             method:"POST",
             headers: {
                         'Content-Type': 'application/json',
