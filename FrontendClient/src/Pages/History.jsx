@@ -9,7 +9,7 @@ function HistoryPage() {
     const navigate = useNavigate();
     const userData = JSON.parse(localStorage.getItem('userData'));
     const userId = userData.userId;
-    const history = useFetch('http://localhost:3100/user/history');
+    const history = useFetch('https://fullstackshop-twinst.onrender.com/user/history');
     const order = history?.filter(data => {
         return data.user.userId === userId;
     })
