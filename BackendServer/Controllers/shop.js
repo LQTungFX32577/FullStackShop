@@ -6,7 +6,7 @@ const nodemailer =  require('nodemailer');
 const hbs = require('nodemailer-express-handlebars');
 const formatCash = require('../utilsuport/transfer');
 const stripe = require('stripe')('sk_test_51PuQOaI3ndHDgrukVSS8fajg0h89UlQe4X9ul3GacAMgNeZW9vXpKRBtp8MsFhi175XUhXrvuveeURlwpGQFNVpl00xJZNzuOv');
-const YOUR_DOMAIN = 'http://localhost:5173';
+const YOUR_DOMAIN = 'https://frontendclient-65646.web.app';
 
 exports.getProducts = (req,res,next) => {
   Product.find()
