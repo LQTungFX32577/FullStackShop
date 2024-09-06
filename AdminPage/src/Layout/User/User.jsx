@@ -3,7 +3,7 @@ import { useFetch } from '../../../../FrontendClient/src/Hook/Fetch';
 export function User() {
     const user = JSON.parse(localStorage.getItem('userData'));
     const token = user?.token
-    const userData = useFetch('http://localhost:3100/admin/dashboard');
+    const userData = useFetch('https://fullstackshop-twinst.onrender.com/admin/dashboard');
     console.log(userData);
     
     return (
@@ -30,7 +30,7 @@ export function User() {
                     <td>{data.role ==="customer"  && <button  onClick={() =>  {
                                             if(confirm("are you suer?")){
 
-                                            fetch('http://localhost:3100/admin/update-user', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/update-user', {
                                               method: "POST",
                                               headers: {
                                                   "Content-Type" : "application/json",
