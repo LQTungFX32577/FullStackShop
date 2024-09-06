@@ -1,0 +1,29 @@
+.dialog{
+    width: 1000px;
+    height: 800px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.dialog img {
+    width: 50%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+.close {
+    background-color: white;
+}
+.detail {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 900px;
+    width: 100%;
+    margin-left: 200px;
+    background-color: rgb(247, 247, 247);
+    height: 200px;
+    align-items: center;
+}
+.header h1{
+    margin-left: 80px;
+}
+.total {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-size: larger;
+}
+.input{
+    height: 40px;
+    width: 320px;
+    outline: none;
+    border: 1px snow rgb(255, 251, 251);
+}
+.button{
+    text-align: left;
+    background-color: black;
+    border-radius: 0px;
+    color: white;
+}
+.span {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    gap: 10px;
+}
+.form h1{
+    text-align: left;
+}
+.form {
+    margin-left: 200px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+}
+.content input{
+    width: 800px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.163);
+}
+.content button{
+    text-align: center;
+    width: 200px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border-radius: 0px;
+}
+.order{
+    margin-top: 300px;
+    margin-left: -300px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.exchange{
+    background-color: rgb(107, 82, 82);
+    color: white;
+    animation-name: growing;
+    animation-duration:0.4s;
+    animation-timing-function: linear;
+}
+@keyframes growing{
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+
+    40% {
+        scale: 0.4;
+        opacity: 0.4;
+    }
+
+    80% {
+        scale: 0.8;
+        opacity: 0.8;
+    }
+   
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}

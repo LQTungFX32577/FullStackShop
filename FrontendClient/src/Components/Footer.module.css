@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 200px;
+}
+.container div {
+    text-align: left;
+    color: gray;
+    margin-top: 50px; 
+    margin-bottom: 50px;  
+  
+}
+.container div p:hover {
+  color: blue;
+  cursor:help;
+}
+.container div h2 {
+  color:  white;
+}

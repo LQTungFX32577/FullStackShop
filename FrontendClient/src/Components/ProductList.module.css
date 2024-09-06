@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px;
+    text-align: center;
+    list-style: none;
+}
+.container input {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px blue;
+    text-indent: 20px;
+    outline: none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.container li {
+    overflow-wrap: break-word;
+    
+}
+.container img {
+    width: 300px;
+    animation-name: growing;
+    animation-duration:0.4s;
+    animation-timing-function: linear;
+}
+.container img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.container h2{
+    font-size: 15px;
+}
+@keyframes growing{
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+
+    20% {
+        scale: 0.2;
+        opacity: 0.2;
+    }
+
+    40% {
+        scale: 0.4;
+        opacity: 0.4;
+    }
+
+    60% {
+        scale: 0.6;
+        opacity: 0.6;
+    }
+ 
+    80% {
+        scale: 0.8;
+        opacity: 0.8;
+    }
+   
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}

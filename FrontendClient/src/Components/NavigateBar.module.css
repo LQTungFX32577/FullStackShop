@@ -1,0 +1,84 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    gap: 60px;
+  }
+  .list h1 {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 0;
+    font-family:'Courier New', Courier, monospace
+  }
+  .span{
+    display: flex;
+    flex-direction: column;
+  }
+  .list a {
+    text-decoration: none;
+    color: var(--color-primary-400);
+  }
+  .tooltipCart a:hover[data-c-tooltip]::before {
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 440px;
+    text-align: center;
+    padding: 8px;
+    width: 100px;
+    color: black;
+    content: attr(data-c-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .tooltipLogin a:hover[data-c-tooltip]::before {
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 330px;
+    text-align: center;
+    padding: 8px;
+    width: 100px;
+    color: black;
+    content: attr(data-c-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .list a:hover,
+  .list a.active {
+    color: red;
+    border-bottom: 1px solid rgb(173, 173, 173);
+  }
+  .choice {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 110px;
+    right: 340px;
+    animation-name: downing;
+    animation-duration:0.5s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes downing{
+    0% {
+        height: 0;
+        rotate: 20deg;
+        opacity: 0;
+    }
+    50% {
+      height: 40px;
+      opacity: 0.5;
+    }
+    100%{
+        height: 80px;
+        opacity: 1;
+    }
+}

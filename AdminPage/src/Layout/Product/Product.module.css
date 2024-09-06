@@ -1,0 +1,23 @@
+.table{
+    margin-right: 40px;
+    background-color:  rgb(247, 247, 247);
+    width: 1350px;
+    opacity: 0.8;
+}
+.table td{
+    background-color: white;
+    padding: 5px;
+}
+.h1{
+    color: gray;
+    text-align: left;
+}
+.input{
+    outline: none;
+    height: 30px;
+    width: 300px;
+    margin-left: -1080px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    text-indent: 20px;
+}

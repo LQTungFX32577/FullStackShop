@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+.header {
+    display: flex;
+    width: 80%;
+    margin-left: 200px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 247);
+    color: gray;
+}
+.header p {
+    font-size: larger;
+}
+.container h1 {
+    text-align: left;
+    margin-left: 200px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin-left: 200px;
+    
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 150px;
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.linkShop:hover {
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    padding: 7px;
+}
+.linkCheck:hover {
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    padding: 7px;
+}
+content {
+    background-color: rgb(247, 247, 247);
+    width: 80%;
+    margin-left: 200px;
+}
+.span{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+.span button {
+    height: 40px;
+    margin-top: 7px;
+}
+.span p {
+    width: 20px;
+}
+.data {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.data img{
+    width: 100px;
+    margin-left: 20px;
+}
+.data h3{
+    width: 190px;
+    
+}
+.data button{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    text-align: left;
+    position: absolute;
+    right: 150px;
+
+}
+.total {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    font-size: larger;
+}
+.bottom input{
+    height: 40px;
+    width: 320px;
+    outline: none;
+    border: 1px snow rgb(255, 251, 251);
+}
+.bottom button{
+    text-align: left;
+    background-color: black;
+    border-radius: 0px;
+    color: white;
+}

@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 100px;
+    gap: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.nav h1, h2{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.62);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title{
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav a{
+    font-size: 20px;
+}
+nav a:hover {
+    color: orangered;
+    font-size: 21px;
+}
+.action{
+    color: orangered;
+    font-size: 21px;
+}
