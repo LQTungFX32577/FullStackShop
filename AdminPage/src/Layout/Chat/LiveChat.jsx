@@ -14,12 +14,12 @@ export function LiveChat() {
     const chatvalue = useRef();
     const [room, setRoom] = useState();
     const socket = useRef()
-    const roomChat = useFetch('http://localhost:3100/admin/chatRoom');
+    const roomChat = useFetch('https://fullstackshop-twinst.onrender.com/admin/chatRoom');
     const chatBox = useRef();
     const [roomData, setRoomData] = useState();
 
     useEffect(() => {
-        socket.current = io("ws://localhost:3100")
+        socket.current = io("https://fullstackshop-twinst.onrender.com")
         socket.current.on('sendDataServer', dataGot => {
         console.log(dataGot)
         setId(dataGot.data.id);
@@ -77,7 +77,7 @@ export function LiveChat() {
                         <button onClick={() => window.location.reload()} style={{width:"fit-content", marginTop:"10px"}}><FontAwesomeIcon icon={faArrowRotateBack}/>Refresh</button>
                         {roomChat && roomChat.map(data => (
                             <h2 onClick={() => {
-                                fetch('http://localhost:3100/admin/Room', {
+                                fetch('https://fullstackshop-twinst.onrender.com/admin/Room', {
                                     method: "POST",
                                     headers: {
                                         "Content-Type":"application/json"
