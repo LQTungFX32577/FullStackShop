@@ -11,7 +11,7 @@ export function Product() {
     const token = user?.token
     const role = user.role
     const navigate = useNavigate();
-    const userData = useFetch('http://localhost:3100/admin/product');
+    const userData = useFetch('https://fullstackshop-twinst.onrender.com/admin/product');
     console.log(userData);
     const [state,setState] = useState("");
     let isState;
@@ -68,7 +68,7 @@ export function Product() {
                         <button onClick={() =>  {
                                             if(confirm("are you suer?")){
 
-                                            fetch('http://localhost:3100/admin/delete-product', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/delete-product', {
                                             method: "POST",
                                             headers: {
                                                 "Content-Type" : "application/json",
@@ -108,7 +108,7 @@ export function Product() {
                         <button onClick={() =>  {
                                             if(confirm("are you suer?")){
 
-                                            fetch('http://localhost:3100/admin/delete-product', {
+                                            fetch('https://fullstackshop-twinst.onrender.com/admin/delete-product', {
                                             method: "POST",
                                             headers: {
                                                 "Content-Type" : "application/json"
