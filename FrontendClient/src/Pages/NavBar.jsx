@@ -33,7 +33,7 @@ function NavBar() {
         }
     }
     useEffect(() => {
-        socket.current = io("ws://localhost:3100")
+        socket.current = io("https://fullstackshop-twinst.onrender.com")
         socket.current.on('sendDataServer', dataGot => {
         console.log(dataGot)
         setId(dataGot.data.id);
