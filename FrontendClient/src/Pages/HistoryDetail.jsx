@@ -6,7 +6,7 @@ import formatCash from "../UI/TranslateMoney";
 function HistoryDetailPage() {
     const { detail } = useParams();
     
-    const Detail = useFetch('http://localhost:3100/user/history/'+ detail)
+    const Detail = useFetch('https://fullstackshop-twinst.onrender.com/user/history/'+ detail)
     const user = Detail?.user;
     const item = Detail?.orders;
     return (
