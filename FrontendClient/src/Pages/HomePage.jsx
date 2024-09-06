@@ -11,7 +11,7 @@ import {  json, useRouteLoaderData } from 'react-router-dom';
 }
 export default HomePage
 export async function loadEvents() {
-    const response = await fetch('http://localhost:3100/shop/products');
+    const response = await fetch('https://fullstackshop-twinst.onrender.com/shop/products');
   
     if (!response.ok) {
       // return { isError: true, message: 'Could not fetch events.' };
