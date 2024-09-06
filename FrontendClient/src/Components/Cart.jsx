@@ -59,7 +59,7 @@ const [discount, setDiscount] = useState(total);
             navigate('/cart');
         }
         else{
-            fetch('http://localhost:3100/shop/addProducts', {
+            fetch('https://fullstackshop-twinst.onrender.com/shop/addProducts', {
                 method: "PATCH",
                 headers: {
                 'Content-Type': 'application/json',
