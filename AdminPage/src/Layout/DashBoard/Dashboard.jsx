@@ -11,7 +11,7 @@ export function Dashboard() {
    const [page, setPage] = useState(1);
    const navigate = useNavigate();
    const[transaction,setTransaction] = useState();
-   const Data = useFetch('http://localhost:3100/admin/dashboard');
+   const Data = useFetch('https://fullstackshop-twinst.onrender.com/admin/dashboard');
    
    const userClients = Data?.user.length;
    const Order = Data?.order.length;
@@ -27,7 +27,7 @@ export function Dashboard() {
    
    const EPM = (totalPrice/12).toFixed(0);
    useEffect(() => {
-    fetch(`http://localhost:3100/admin/transaction/${page}`)
+    fetch(`https://fullstackshop-twinst.onrender.com/admin/transaction/${page}`)
     .then(response => response.json())
     .then(data => setTransaction(data))
     .catch(err => console.log(err)
