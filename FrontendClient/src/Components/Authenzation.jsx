@@ -30,7 +30,7 @@ function Authenzation() {
         const userData = Object.fromEntries(formData.entries());
         console.log(userData);
             if(!isLogin){
-                fetch('http://localhost:3100/user/signup', {
+                fetch('https://fullstackshop-twinst.onrender.com/user/signup', {
                     method:"POST",
                     headers:{
                         "Content-Type" : "application/json",
@@ -52,7 +52,7 @@ function Authenzation() {
             else {
                 console.log(userData);
                 
-                fetch('http://localhost:3100/user/login', {
+                fetch('https://fullstackshop-twinst.onrender.com/user/login', {
                     method:"POST",
                     headers:{
                         "Content-Type" : "application/json",
